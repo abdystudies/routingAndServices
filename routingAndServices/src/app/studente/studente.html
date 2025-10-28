@@ -1,0 +1,8 @@
+<div class="studente-card">
+    <p><strong>Nome:</strong> {{ nome }}</p>
+    <p><strong>Classe:</strong> {{ classe }}</p>
+
+    <button (click) = "toggleMediaVoti()"> {{ visible ? 'mostra' : 'nascondi'}} media voti</button>
+    <p *ngIf="visible"><strong>Media Voti:</strong> {{ mediaVoti }}</p>
+
+</div>

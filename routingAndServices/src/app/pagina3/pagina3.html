@@ -1,0 +1,9 @@
+<h2>Elenco Studenti</h2>
+
+<div >
+  <app-studente 
+  *ngFor="let p of studenti"
+  [nome]="p.nome"
+  [classe]="p.classe"
+  ></app-studente>
+</div>
